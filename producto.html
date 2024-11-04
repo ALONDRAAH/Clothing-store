@@ -3,9 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>TIENDA CAMISAS</title>
   </head>
   <body>
-    <h1>hello</h1>
+    <header class="header">
+      <a href="index.html">
+        <img class="header__logo" src="./img/logo.png" alt="Logo principal" />
+      </a>
+    </header>
+    <nav class="navegacion">
+      <a class="navegacion__enlace" href="index.html">Tienda</a>
+      <a
+        class="navegacion__enlace navegacion__enlace--activo"
+        href="nosotros.html"
+        >Nosotros</a
+      >
+    </nav>
+    <main class="contenedor">
+      <h1>CAMISA</h1>
+      <div class="contenidoCamisa">
+        <img src="./img/2.jpg" alt="imagen camisa" />
+        <div>
+          <p>
+            <strong>Camisa de Marca</strong><br />
+            <strong>Descripción:</strong> Esta camisa es un imprescindible en
+            cualquier guardarropa. Confeccionada en 100% algodón de alta
+            calidad, esta prenda combina estilo y comodidad a la perfección.<br />
+
+            <strong>Características:</strong><br />
+            - <strong>Material:</strong> 100% algodón, transpirable y suave al
+            tacto.<br />
+            - <strong>Tamaños disponibles:</strong> XS, S, M, L, XL, XXL.<br />
+
+            <strong>Precio:</strong> $25<br />
+            <strong>Disponibilidad:</strong> La camisa está disponible para
+            envío inmediato. Puedes seleccionar cantidad y tamaño preferido al
+            momento de la compra.
+          </p>
+
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected>Seleccionar Talla</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+            <input
+              class="formulario__campo"
+              type="number"
+              placeholder="Cantidad"
+            />
+            <input
+              class="formulario__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__texto">Clothing store todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
